@@ -92,7 +92,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className=" bg-teal-600 sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-30 border-b flex  w-full max-w-8xl justify-between px-4 py-5 text-lg">
+    <div className=" bg-slate-200 sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-40 border-b flex  w-full max-w-8xl justify-between px-4 py-5 text-lg">
       {/* left side  */}
       <section className="flex items-center gap-10">
         {/* logo */}
@@ -115,7 +115,7 @@ export default function Navbar() {
 
               {/* dropdown */}
               {d.children && (
-                <div className="absolute  backdrop-filter backdrop-blur-lg bg-opacity-0 border-b border-gray-200 top-25 left-5 hidden w-auto  flex-col gap-1 rounded-xl bg-white py-2 shadow-md  transition-all group-hover:flex ">
+                <div className="absolute  backdrop-filter backdrop-blur-lg bg-opacity-70 border-b border-gray-200 top-25 left-5 hidden w-auto  flex-col gap-1 rounded-xl bg-white py-2 shadow-md  transition-all group-hover:flex ">
                   {d.children.map((ch, i) => (
                     <Link
                       key={i}
