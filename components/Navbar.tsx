@@ -92,7 +92,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-30 border-b flex  w-full max-w-8xl justify-between px-4 py-5 text-lg">
+    <div className=" bg-teal-600 sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-30 border-b flex  w-full max-w-8xl justify-between px-4 py-5 text-lg">
       {/* left side  */}
       <section className="flex items-center gap-10">
         {/* logo */}
