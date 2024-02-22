@@ -21,6 +21,10 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
+      label: 'Home',
+      link: '/',
+  },
+  {
     label: 'Courses',
     link: '/courses',
     children: [
