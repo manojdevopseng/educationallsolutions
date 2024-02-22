@@ -1,24 +1,35 @@
-import Image from "next/image"
-import bg from "../../public/assets/bg2.jpg"
-// import Button from "@/components/Button.js"
+// import React from 'react'
+import Link from "next/link"
+import { Spotlight } from "@/components/ui/Spotlight"
+import { Button } from "@/components/ui/moving-border";
 
-export default function Hero() {
+function Hero() {
   return (
-    <>
-      <div className=" relative container flex flex-wrap items-center justify-end mx-auto mt-16 md:px-12 md:flex-row">
-        <div className="mb-14 lg:mb-0 lg:w-1/2">
-          <h1 className="max-w-xl text-[2.9rem] leading-none text-gray-900 font-extrabold font-sans text-center lg:text-5xl lg:text-left lg:leading-tight mb-5">
-            Choose your right platform to grow your career with right path.
-          </h1>
-          <p className="max-w-xl text-center text-gray-500 lg:text-left lg:max-w-md">
-            Education All Solutions is an online platform that helps you to find the right courses for your needs.
-          </p>
-          <div className="flex justify-center mt-14 lg:justify-start">
-            <a href="/courses"><button type='button' className='text-white bg-indigo-600 font-medium rounded-lg px-5 py-4 text-center hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out'>View Courses</button></a>
-            <a href="/batch" ><button type='button' className='ml-4 text-gray-900 bg-gray-200 font-medium rounded-lg px-5 py-4 text-center hover:bg-gray-300 hover:drop-shadow-md transition duration-300 ease-in-out'>Select Batch</button></a>
-          </div>
+    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
+        <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="blue"
+        />
+        <div className="p-4 relative z-10 w-full text-center" >
+            <h1
+            className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400"
+            >Welcome to Education All Solutions</h1>
+            <p
+            className="mt-4 font-normal text-base md:text-lg text-black max-w-lg mx-auto"
+            >Education All Solutions is an online platform that helps you to find the right courses for your needs.</p>
+            <div className="mt-4">
+                <Link href={"/courses"}>
+                    <Button
+                    borderRadius="1.75rem"
+                    className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    >
+                    Explore Courses
+                    </Button>
+                </Link>
+            </div>
         </div>
-      </div>
-    </>
+    </div>
   )
 }
+
+export default Hero
