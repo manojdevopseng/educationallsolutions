@@ -1,0 +1,34 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Complete Thesis Guidance",
+      "slug": "complete-thesis-guidance",
+      "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
+      "price": 99.99,
+      "instructor": "Amit Kumar",
+      "isFeatured": true,
+      "image": "/courses/guitar.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Research Paper Guidance",
+      "slug": "research-paper-guidance",
+      "description": "Start your musical journey with foundational piano skills taught by expert instructors.",
+      "price": 109.99,
+      "instructor": "Amit Kumar",
+      "isFeatured": true,
+      "image": "/courses/piano.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Research Paper Publish Guidance",
+      "slug": "research-paper-publish-guidance",
+      "description": "Enhance your singing with advanced vocal techniques for intermediate to advanced learners.",
+      "price": 119.99,
+      "instructor": "Amit Kumar",
+      "isFeatured": true,
+      "image": "/courses/vocalist.jpg"
+    }
+  ]
+}

@@ -38,7 +38,7 @@ const Courses = () => {
                   <p className='text-lg text-neutral-300 dark:text-neutral-400 flex-grow'>{course.description}</p>
                   <Link href={`/courses/${course.slug}`}>
                     <button className="px-8 py-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-amber-400 hover:border-amber-400 hover:text-black border-2 border-transparent">
-                      Learn More
+                      View Course
                     </button>
                   </Link>
                 </div>
