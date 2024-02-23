@@ -10,6 +10,9 @@ const navItems: NavItem[] = [
     label: 'Contact +91 9871023007',
   },
   {
+    label: 'Write Us-eduallsolutions@gmail.com',
+  },
+  {
     label: 'Email-info@eduallsolutions.com',
   }
 ];
