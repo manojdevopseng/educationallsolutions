@@ -77,7 +77,7 @@ function Footer() {
           <p>New Delhi, India</p>
           <p>Delhi 10001</p>
           <p>Email: info@eduallsolution.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Phone: 987 102 3007</p>
         </div>
       </div>
       <p className="text-center text-sm pt-8">© 2024 Education All Solutions. All rights reserved.</p>
