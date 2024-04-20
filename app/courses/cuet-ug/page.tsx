@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/Spotlight";
-import courseDataForIner from "@/data/coursesDataForIner.json";
+import courseDataForIner from "@/data/cuetUG.json";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { Url } from "url";
 
@@ -10,7 +10,6 @@ interface Course {
   title: string;
   slug: string;
   description: string;
-  price: number;
   instructor: string;
   isFeatured: boolean;
 }
@@ -34,16 +33,27 @@ const CuetUg = () => {
       <div className="mt-4 ml-4 mr-4">
         <div>
           {featuredCourses.map((course: Course) => (
-            <div key={course.id} className="course">
+            <div key={course.id} className="course text-xl">
               {/* <img src={course.image} alt={course.title} /> */}
-              <h2>{course.title}</h2>
-              <p>
+              <p className="text-2xl">
                 <strong>Instructor:</strong> {course.instructor}
               </p>
-              <p>
-                <strong>Price:</strong> ${course.price}
-              </p>
-              <p>{course.description}</p>
+              <h2 className="text-2xl mt-4">
+                <strong>Description</strong>
+              </h2>
+              <p className="grid grid-cols-2 text-justify">{course.description}</p>
+              <h2 className="text-2xl mt-4">
+                <strong>Highlights of the course</strong>
+              </h2>
+              <p>- Comprehensive coverage of all topics</p>
+              <p>- Interactive and engaging teaching methods</p>
+              <p>- Practice problems and exercises for hands-on learning</p>
+              <p>- Emphasis on building strong foundation understanding</p>
+              <p>- Targeted exam preparation strategies</p>
+              <p>- Regular progress assessments and feedback</p>
+              <p>- Periodic mock tests</p>
+              <p>- Practice with previous year's papers to simulate exam conditions</p>
+              <p>- Access to extensive study materials and resources</p>
             </div>
           ))}
         </div>

@@ -1,0 +1,13 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "CUET (UG)",
+      "slug": "cuet-ug",
+      "description": "Prepare effectively with us, at EduAllSolutions, for the CUET UG entrance exam. Covering essential topics in English, Mathematics, Science, and Social Studies, this program ensures a comprehensive approach specific to your exam. With a focus on clarity, depth, and exam strategy, Learners will gain confidence in tackling the specific challenges of the CUET UG.",
+      "instructor": "Amit Kumar",
+      "isFeatured": true,
+      "image": "/courses/guitar.jpg"
+    }
+  ]
+}

@@ -34,7 +34,7 @@ const Courses = () => {
             <div key={course.id} className=' flex justify-center'>
               <BackgroundGradient className='flex flex-col rounded-[22px] dark:bg-zinc-200 overflow-hidden h-full max-w-sm'>
                 <div className='p-4 sm:p-6 flex flex-col items-center text-center flex-grow'>
-                  <p className=' text-xl sm:text-xl text-zinc-200 mt-4 mb-2 dark:text-neutral-200'>{course.title}</p>
+                  <p className=' text-xl sm:text-xl text-zinc-200 mt-4 mb-2 dark:text-black'>{course.title}</p>
                   <p className='text-lg text-neutral-300 dark:text-neutral-400 flex-grow'>{course.description}</p>
                   <Link href={`/phd-guidance/${course.slug}`}>
                     <button className="px-8 py-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-amber-400 hover:border-amber-400 hover:text-black border-2 border-transparent">
