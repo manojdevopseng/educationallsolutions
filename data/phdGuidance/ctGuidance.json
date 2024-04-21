@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "COMPLETE THESIS GUIDANCE",
+        "slug": "complete thesis guidance",
+        "description": "We, at EduAllSolutions, aspire to equip you with essential skills to navigate the process of thesis writing.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  

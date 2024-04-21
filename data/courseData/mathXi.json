@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "MATHEMATICS (XI-XII)",
+        "slug": "mathematics (xi-xii)",
+        "description": "Prepare for success in Class 11 and 12 (Mathematics) with our comprehensive course at EduAllSolutions. Covering key topics like algebra, calculus, geomatry, and trigonometry, we ensure a solid foundation for higher studies. With a focus on clarity, depth, and application, learners will build confidence in tackling complex mathematical concepts.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "NET PAPER-I",
+        "slug": "net paper-i",
+        "description": "Prepare strategically with us, at EduAllSolutions, for the NET Paper-I with our intensive course Engage in targeted lessons, practice problems, and exam-focused reviews designed to enhance understanding and problem-solving skills. With a focus on efficiency and mastery, students will gain confidence in tackling the specific challenges of the NET exam.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  
