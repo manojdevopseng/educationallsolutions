@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "NET (EDUCATION)",
+        "slug": "net education",
+        "description": "Unlock your potential with our comprehensive NET (Education) preparation course, at EduAllSolutions, whether pursuing a career in teaching or educational research, this course provides the necessary foundation to excel in the NET exam.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  

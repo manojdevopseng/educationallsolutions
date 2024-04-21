@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "NDA (MATHS)",
+        "slug": "nda maths",
+        "description": "A comprehensive course which covers the Mathematics syllabus for National Defence Academy (NDA) entrance exam. With a focus on building strong mathematical reasoning and analytical skills, this course covers concepts like arithmetic, algebra and trigonometry.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  

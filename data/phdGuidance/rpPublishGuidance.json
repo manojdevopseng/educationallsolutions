@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "RESEARCH PAPER PUBLISH GUIDANCE",
+        "slug": "research paper publish guidance",
+        "description": "This course is designed to assist you in the process of publishing your research in reputable academic journals.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  

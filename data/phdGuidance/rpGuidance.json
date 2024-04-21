@@ -1,0 +1,14 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "RESEARCH PAPER GUIDANCE",
+        "slug": "research paper guidance",
+        "description": "Welcome to our comprehensive course on research paper guidance, we provide you with valuable insights and skills to navigate the process of crafting high-quality research papers.",
+        "instructor": "Amit Kumar",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      }
+    ]
+  }
+  

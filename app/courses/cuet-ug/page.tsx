@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/Spotlight";
-import courseDataForIner from "@/data/cuetUG.json";
+import courseDataForIner from "@/data/courseData/cuetUG.json";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { Url } from "url";
 
