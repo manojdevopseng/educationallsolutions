@@ -10,7 +10,6 @@ interface Course {
   title: string;
   slug: string;
   description: string;
-  instructor: string;
   isFeatured: boolean;
 }
 
@@ -35,11 +34,6 @@ const MathematicsClass = () => {
           {featuredCourses.map((course: Course) => (
             <div key={course.id} className="course text-xl text-center">
               {/* <img src={course.image} alt={course.title} /> */}
-              <div>
-                <p className="text-2xl">
-                  <strong>Instructor:</strong> {course.instructor}
-                </p>
-              </div>
               <div className="text-md mt-3 flex justify-center items-center text-justify ">
                 <div>
                   <div className="border-2 border-blue-400 p-3 rounded-md ">
@@ -52,24 +46,12 @@ const MathematicsClass = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="text-md mt-3 flex flex-col justify-center items-center text-justify">
-                <div>
-                  <div className="p-5 text-center">
-                    <div>
-                      <h2 className="text-2xl mt-8  text-center">
-                        <strong>Description</strong>
-                      </h2>
-                      <p className="text-justify mt-4">{course.description}</p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
               <div className="text-md mt-3 flex justify-center items-center text-justify ">
                 <div>
                   <div className=" border-2 border-blue-400 rounded-md p-5">
                     <div>
                       <h2 className="text-2xl mt-8  text-center">
-                        <strong>Highlights of the course</strong>
+                        <strong>Highlights of the Course</strong>
                       </h2>
                       <p className="mt-4">- Comprehensive coverage of all topics</p>
                       <p className="mt-1">- Interactive and engaging teaching methods</p>
