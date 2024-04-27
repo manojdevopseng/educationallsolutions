@@ -140,15 +140,15 @@ export default function Navbar() {
       </section>
 
       {/* right side data */}
-      {/* <section className=" hidden md:flex   items-center gap-8 ">
-        <a href="/login" ><button className="h-fit rounded-xl border-2 border-neutral-400 px-5 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+      <section className=" hidden md:flex   items-center gap-8 ">
+        <a href="/login" ><button className="h-fit rounded-xl border-2 border-blue-500 px-5 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
           Login
         </button></a>
 
-        <a href="/register" ><button className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+        <a href="/register" ><button className="h-fit rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
           Register
         </button></a>
-      </section> */}
+      </section>
 
       <FiMenu
         onClick={openSideMenu}
@@ -180,7 +180,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           ))}
         </div>
 
-        {/* <section className="  flex  flex-col   gap-8  mt-4 items-center">
+        <section className="  flex  flex-col   gap-8  mt-4 items-center">
           <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
             Login
           </button>
@@ -188,7 +188,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
             Register
           </button>
-        </section> */}
+        </section>
       </div>
     </div>
   );
