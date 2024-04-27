@@ -181,11 +181,11 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         </div>
 
         <section className="  flex  flex-col   gap-8  mt-4 items-center">
-          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
             Login
           </button>
 
-          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
             Register
           </button>
         </section>
