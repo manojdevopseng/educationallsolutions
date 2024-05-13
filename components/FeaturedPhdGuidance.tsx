@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { Spotlight } from '@/components/ui/Spotlight'
+import { Spotlight } from '@/components/ui/Spotlight';
 import courseData from "@/data/phdGuidanceData.json";
 import { BackgroundGradient } from './ui/background-gradient';
 
