@@ -47,7 +47,7 @@ const PhdGuidance = () => {
           ))}
         </div>
       </div>
-      <div className='mt-20 text-center text-black'>
+      {/* <div className='mt-20 text-center text-black'>
         <Link href={"/phd-guidance"}
           className=''
         >
@@ -55,7 +55,7 @@ const PhdGuidance = () => {
             View All Courses
           </button>
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }
