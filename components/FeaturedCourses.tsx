@@ -47,7 +47,7 @@ const Courses = () => {
           ))}
         </div>
       </div>
-      <div className='mt-20 text-center text-black'>
+      {/* <div className='mt-20 text-center text-black'>
         <Link href={"/courses"}
           className=''
         >
@@ -55,7 +55,7 @@ const Courses = () => {
             View All Courses
           </button>
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }
