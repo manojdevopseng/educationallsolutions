@@ -147,7 +147,7 @@ export default function Navbar() {
         <a href="/register" ><button className="h-fit rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
           Register
         </button></a>
-      </section> */}
+      </section>
 
       <FiMenu
         onClick={openSideMenu}
