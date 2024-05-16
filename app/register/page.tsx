@@ -60,7 +60,7 @@ const Register: React.FC = () => {
                     {/* Eye button to toggle password visibility */}
 
                     <button
-                        className='text-blue-500 mr-3'
+                        className='text-violet-900 mr-3'
                         onClick={() => setShowPassword(!showPassword)}
                     >
                         {showPassword ? 'Hide' : 'Show'}
@@ -85,7 +85,7 @@ const Register: React.FC = () => {
                     {/* Eye button to toggle password visibility */}
 
                     <button
-                        className='text-blue-500 mr-3'
+                        className='text-violet-900 mr-3'
                         onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                     >
                         {showConfirmPassword ? 'Hide' : 'Show'}

@@ -28,14 +28,14 @@ const Login = () => {
           placeholder='Enter Your Password' />
           {/* Eye button to toggle password visibility */}
           <button
-            className='text-blue-500 mr-3'
+            className='text-violet-900 mr-3'
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? 'Hide' : 'Show'}
           </button>
         </div>
       </div>
-      <div className='forgot-password pl-16 mt-7 text-[#797979] text-lg'>Lost Password? <span className='text-[#4c00b4] cursor-pointer hover:text-black'>Click Here!</span></div>
+      <div className='forgot-password pl-16 mt-7 text-[#797979] text-lg'>Lost Password? <a href="/forgot-password"><span className='text-[#4c00b4] cursor-pointer hover:text-black'>Click Here!</span></a></div>
       <div className='submit-container flex gap-8 mx-auto my-[60px]'>
         <div className='submit flex justify-center items-center cursor-pointer w-48 h-14  max-w-[200px]  rounded-full hover:font-medium text-lg border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90'>
           <Link

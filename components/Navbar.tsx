@@ -95,21 +95,21 @@ export default function Navbar() {
   }
 
   return (
-    <div className="sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-30 border-b flex  w-full max-w-8xl justify-between px-4 py-5 text-lg">
+    <div className="sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-30 border-b flex w-full max-w-8xl justify-between px-4 py-5 text-lg">
       {/* left side  */}
       <section className="flex items-center gap-10">
         {/* logo */}
         {/* <Image src={logo} alt=" logo" /> */}
         <a href="/" className="flex cursor-pointer items-center gap-2 font-bold text-3xl text-neutral-900">Edu.AllSolutions</a>
         {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
-        <div className="hidden md:flex items-center gap-4 transition-all">
+        <div className="hidden md:hidden lg:hidden xl:flex items-center gap-4 transition-all">
           {navItems.map((d, i) => (
             <Link
               key={i}
               href={d.link ?? "#"}
               className="relative group  px-2 py-3 transition-all "
             >
-              <p className="flex cursor-pointer items-center gap-2 text-neutral-600 group-hover:text-black ">
+              <p className="flex cursor-pointer items-center gap-2 text-neutral-900 group-hover:text-black ">
                 <span>{d.label}</span>
                 {d.children && (
                   <IoIosArrowDown className=" rotate-180  transition-all group-hover:rotate-0" />
@@ -140,11 +140,10 @@ export default function Navbar() {
       </section>
 
       {/* right side data */}
-      <section className=" hidden md:flex   items-center gap-8 ">
+      <section className="hidden md:hidden lg:flex  items-center gap-8 ">
         <a href="/login" ><button className="h-fit rounded-xl border-2 border-blue-500 px-5 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
           Login
         </button></a>
-
         <a href="/register" ><button className="h-fit rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
           Register
         </button></a>
@@ -152,7 +151,7 @@ export default function Navbar() {
 
       <FiMenu
         onClick={openSideMenu}
-        className="cursor-pointer text-4xl md:hidden"
+        className="cursor-pointer text-4xl lg:hidden"
       />
     </div>
   );
@@ -160,7 +159,7 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
-    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
+    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60">
       <div className=" h-full w-[65%] bg-white rounded-lg transition-opacity px-4 py-4 ">
         <section className="flex justify-end">
           <AiOutlineClose
@@ -168,7 +167,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
             className="cursor-pointer text-4xl "
           />
         </section>
-        <div className=" flex flex-col text-base  gap-2 transition-all">
+        <div className=" flex flex-col text-base  gap-2 transition-all md:text-sm">
           {navItems.map((d, i) => (
             <SingleNavItem
               key={i}
