@@ -41,7 +41,7 @@ const CuetUg = () => {
                       <h2 className="text-2xl mt-8  text-center">
                         <strong>Description</strong>
                       </h2>
-                      <p className="text-center mt-4 text-2xl">{course.description}</p>
+                      <p className="lg:text-center mt-4 text-2xl md:text-justify text-justify">{course.description}</p>
                     </div>
                   </div>
                 </div>
