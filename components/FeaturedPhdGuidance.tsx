@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
-import { Spotlight } from '@/components/ui/Spotlight'
-import courseData from "@/data/coursesData.json";
+import { Spotlight } from '@/components/ui/Spotlight';
+import courseData from "@/data/phdGuidanceData.json";
 import { BackgroundGradient } from './ui/background-gradient';
 
 interface Course {
@@ -14,7 +14,7 @@ interface Course {
   isFeatured: boolean
 }
 
-const Courses = () => {
+const PhdGuidance = () => {
 
   const featuredCourses = courseData.courses.filter((course: Course) => course.isFeatured);
 
@@ -25,7 +25,7 @@ const Courses = () => {
         fill="blue"
       />
       <div className='text-center'>
-        <h2 className=' text-lg text-teal-600 font-semibold tracking-wide uppercase'>Featured Courses</h2>
+        <h2 className=' text-lg text-teal-600 font-semibold tracking-wide uppercase'>Featured Ph.D Guidance</h2>
         <p className='mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl font-sans'>Learn with the Best</p>
       </div>
       <div className='mt-10'>
@@ -48,7 +48,7 @@ const Courses = () => {
         </div>
       </div>
       {/* <div className='mt-20 text-center text-black'>
-        <Link href={"/courses"}
+        <Link href={"/phd-guidance"}
           className=''
         >
           <button className="px-8 py-4 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
@@ -60,4 +60,4 @@ const Courses = () => {
   )
 }
 
-export default Courses
+export default PhdGuidance
