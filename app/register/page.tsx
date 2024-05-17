@@ -25,7 +25,7 @@ const Register: React.FC = () => {
     return (
         <div className='container flex flex-col w-[600px] m-auto mt-2 pb-[30px]'>
             <div className='header flex flex-col items-center gap-[9px] w-full mt-[30px]'>
-                <div className='text-blue-900 text-2xl font-bold'>User Register</div>
+                <div className='text-blue-900 text-2xl font-bold'>Register</div>
                 <div className='underline w-16 h-[6px] bg-[#3c009d] rounded-lg border'></div>
             </div>
             <div className='inputs mt-14 flex flex-col gap-6'>
