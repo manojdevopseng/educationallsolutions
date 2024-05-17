@@ -23,7 +23,7 @@ jobs:
       - name: Fetch feature branch
         run: git fetch origin Feature/login-button:Feature/login-button
 
-      - name: Merge changes from feature/login-button to development
+      - name: Merge changes from Feature/login-button to Development
         run: |
           git checkout Development
           git merge Feature/login-button
