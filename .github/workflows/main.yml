@@ -1,0 +1,30 @@
+name: Update Development Branch
+
+on:
+  push:
+    branches:
+      - Feature/login-button
+
+jobs:
+  update-development:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: Development
+
+      - name: Set up Git
+        run: |
+          git config user.name "manojdevopseng"
+          git config user.email "kumar.manoj8527387747@gmail.com"
+
+      - name: Fetch feature branch
+        run: git fetch origin Feature/login-button:Feature/login-button
+
+      - name: Merge changes from Feature/login-button to Development
+        run: |
+          git checkout Development
+          git merge Feature/login-button
+          git push origin Development
