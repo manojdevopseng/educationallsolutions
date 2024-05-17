@@ -17,8 +17,8 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config user.name 'manojdevopseng'
-          git config user.email 'kumar.manoj8527387747@gmail.com'
+          git config user.name manojdevopseng
+          git config user.email kumar.manoj8527387747@gmail.com
 
       - name: Merge changes from feature/login-button to development
         run: |
