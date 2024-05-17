@@ -140,14 +140,18 @@ export default function Navbar() {
       </section>
 
       {/* right side data */}
-      <section className="hidden md:hidden lg:flex  items-center gap-8 ">
-        <a href="/login" ><button className="h-fit rounded-xl border-2 border-blue-500 px-5 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
-          Login
-        </button></a>
-        <a href="/register" ><button className="h-fit rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
-          Register
-        </button></a>
-      </section>
+      {/* <section className="hidden md:hidden lg:flex  items-center gap-8 ">
+        <a href="/login" >
+          <button className="h-fit rounded-xl border-2 border-blue-500 px-5 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+            Login
+          </button>
+        </a>
+        <a href="/register" >
+          <button className="h-fit rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+            Register
+          </button>
+        </a>
+      </section> */}
 
       <FiMenu
         onClick={openSideMenu}
