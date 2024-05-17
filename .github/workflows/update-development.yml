@@ -17,12 +17,14 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config user.name manojdevopseng
-          git config user.email kumar.manoj8527387747@gmail.com
+          git config user.name "manojdevopseng"
+          git config user.email "kumar.manoj8527387747@gmail.com"
+
+      - name: Fetch feature branch
+        run: git fetch origin Feature/login-button:Feature/login-button
 
       - name: Merge changes from feature/login-button to development
         run: |
-          git fetch origin Feature/login-button:Feature/login-button
           git checkout Development
           git merge Feature/login-button
           git push origin Development
