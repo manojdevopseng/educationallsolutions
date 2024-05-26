@@ -95,7 +95,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="sticky top-0 z-50 firefox:bg-opacity-90 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-30 border-b flex w-full max-w-8xl justify-between px-4 py-5 text-lg">
+    <div className="sticky top-0 z-50 firefox:bg-opacity-90 mx-auto bg-blue-400  backdrop-filter backdrop-blur-lg bg-opacity-5 border-b font-semibold flex w-full max-w-8xl justify-between px-4 py-5 text-lg">
       {/* left side  */}
       <section className="flex items-center gap-10">
         {/* logo */}
@@ -141,6 +141,11 @@ export default function Navbar() {
 
       {/* right side data */}
       <section className="hidden md:hidden lg:flex  items-center gap-8 ">
+        <a href="/dashboard">
+          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+            Dashboard
+          </button>
+        </a>
         <a href="/login" >
           <button className="h-fit rounded-xl border-2 border-blue-500 px-5 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
             Login
@@ -183,7 +188,12 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           ))}
         </div>
 
-        <section className="  flex  flex-col   gap-8  mt-4 items-center">
+        <section className="flex flex-col gap-8  mt-4 items-center">
+          <a href="/dashboard">
+            <button className="w-full  max-w-[200px]  rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
+              Dashboard
+            </button>
+          </a>
           <a href="/login" >
             <button className="w-full  max-w-[200px]  rounded-xl border-2 border-blue-500 px-4 py-2 text-neutral-600 transition-all hover:border-black hover:text-black/90">
               Login

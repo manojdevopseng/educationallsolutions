@@ -2,11 +2,46 @@
 
 import email_icon from '@/app/assets/images/email.png'
 import password_icon from '@/app/assets/images/password.png'
+import axios from 'axios'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import React, { useEffect, useState } from 'react'
+import toast from 'react-hot-toast'
 
 const Login = () => {
+  const router = useRouter();
+    const [user, setUser] = React.useState({
+        email: "",
+        password: "",
+       
+    })
+    const [buttonDisabled, setButtonDisabled] = React.useState(false);
+    const [loading, setLoading] = React.useState(false);
+
+
+    const onLogin = async () => {
+        try {
+            setLoading(true);
+            const response = await axios.post("/api/users/login", user);
+            console.log("Login success", response.data);
+            toast.success("Login success");
+            router.push("/profile");
+        } catch (error:any) {
+            console.log("Login failed", error.message);
+            toast.error(error.message);
+        } finally{
+        setLoading(false);
+        }
+    }
+
+    useEffect(() => {
+        if(user.email.length > 0 && user.password.length > 0) {
+            setButtonDisabled(false);
+        } else{
+            setButtonDisabled(true);
+        }
+    }, [user]);
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -19,17 +54,31 @@ const Login = () => {
       <div className='inputs mt-14 flex flex-col gap-6'>
         <div className='input flex items-center m-auto w-[480px] h-16 bg-[#eaeaea] rounded-lg'>
           <Image className='mx-8 my-0' src={email_icon} alt='user_icon' />
-          <input className=' h-12 w-[400px] bg-transparent border-none outline-none text-[#797979] text-xl border border-blue-500 rounded-lg' type="email" placeholder='Enter Your Email' />
+          <input 
+            className=' h-12 w-[400px] bg-transparent border-none outline-none text-[#797979] text-xl border border-blue-500 rounded-lg'
+            id='email'
+            type="email"
+            value={user.email} 
+            onChange={(e) => setUser({...user, email: e.target.value})}
+            placeholder='Enter Your Email' 
+            />
         </div>
         <div className='input flex items-center m-auto w-[480px] h-16 bg-[#eaeaea] rounded-lg'>
           <Image className='mx-8 my-0' src={password_icon} alt='user_icon' />
-          <input className=' h-12 w-[400px] bg-transparent border-none outline-none text-[#797979] text-xl border border-blue-500 rounded-lg' 
-          type={showPassword ? 'text' : 'password'} 
-          placeholder='Enter Your Password' />
+          <input 
+            className=' h-12 w-[400px] bg-transparent border-none outline-none text-[#797979] text-xl border border-blue-500 rounded-lg'
+            id='password' 
+            type={showPassword ? 'text' : 'password'} 
+            value={user.password}
+            onChange={(e) => setUser({...user, password: e.target.value})}
+            placeholder='Enter Your Password' />
           {/* Eye button to toggle password visibility */}
           <button
             className='text-violet-900 mr-3'
-            onClick={() => setShowPassword(!showPassword)}
+            onClick={() => {
+              setShowPassword(!showPassword);
+              onLogin();
+            }}
           >
             {showPassword ? 'Hide' : 'Show'}
           </button>

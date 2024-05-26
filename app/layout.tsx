@@ -1,37 +1,33 @@
 import type { Metadata } from 'next';
 import { Epilogue } from 'next/font/google';
-import TopBar from '@/components/TopBar';
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import BottomBar from '@/components/BottomBar';
+import SessionProvider from "@/utils/SessionProvider";
 import './globals.css';
+import { getServerSession } from "next-auth";
+import ClientLayout from '@/components/ClientLayout';
 
-const epilogue = Epilogue({ subsets: ['latin'] })
+const epilogue = Epilogue({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Education All Solutions',
   description: 'Education All Solutions',
-}
+};
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  const session = await getServerSession();
+
   return (
     <html lang="en" className='dark'>
       <body className={`${epilogue.className} ${process.env.NODE_ENV == 'development' ? 'debug-screens' : ''}`}>
-        <div className='top-0 z-50 w-full flex items-center justify-center'>
-          <TopBar />
-        </div>
-        <div className="sticky top-0 z-50 w-full flex items-center justify-center">
-          {/* relative  w-full flex items-center justify-center */}
-          <Navbar />
-        </div>
-        {children}
-        <Footer />
-        <BottomBar />
+        <SessionProvider session={session}>
+          <ClientLayout>
+            {children}
+          </ClientLayout>
+        </SessionProvider>
       </body>
     </html>
-  )
+  );
 }

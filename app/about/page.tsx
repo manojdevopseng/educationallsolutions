@@ -11,8 +11,7 @@ function About() {
           About Us
         </h1>
         <p className="mt-4 font-normal text-base md:text-lg text-black max-w-lg mx-auto">
-          Education All Solutions is an online platform that helps you to find
-          the right courses for your needs.
+        Education All Solutions is an online platform that helps you find the right courses for your needs. We offer a diverse range of courses tailored to help you achieve your learning goals.
         </p>
         <div className="mt-4">
           <Link href={"/courses"}>
